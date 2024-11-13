@@ -1,21 +1,257 @@
+/* global.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
+  --navbar-height: 4rem; /* Adjust based on your navbar height */
+  --footer-height: 4rem; /* Adjust based on your footer height */
+  /* Base Theme Colors - Light Mode */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #020817;
+  --background-start: #f0f4ff;
+  --background-end: #fff0f7;
+
+  /* Primary Colors */
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --primary-light: #60a5fa;
+  --primary-dark: #2563eb;
+
+  /* Secondary Colors */
+  --secondary: #10b981;
+  --secondary-foreground: #ffffff;
+  --secondary-light: #34d399;
+  --secondary-dark: #059669;
+
+  /* Accent Colors */
+  --accent: #f43f5e;
+  --accent-foreground: #ffffff;
+  --accent-light: #fb7185;
+  --accent-dark: #e11d48;
+
+  /* Semantic Colors */
+  --success: #22c55e;
+  --success-foreground: #ffffff;
+  --success-light: #4ade80;
+  --success-dark: #16a34a;
+
+  --warning: #f59e0b;
+  --warning-foreground: #020817;
+  --warning-light: #fbbf24;
+  --warning-dark: #d97706;
+
+  --error: #ef4444;
+  --error-foreground: #ffffff;
+  --error-light: #f87171;
+  --error-dark: #dc2626;
+
+  --info: #0ea5e9;
+  --info-foreground: #ffffff;
+  --info-light: #38bdf8;
+  --info-dark: #0284c7;
+
+  /* UI Element Colors */
+  --card: #ffffff;
+  --card-foreground: #020817;
+  --card-hovered: #f8fafc;
+  --card-active: #f1f5f9;
+
+  --popover: #ffffff;
+  --popover-foreground: #020817;
+
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+
+  /* Border Colors */
+  --border: #e2e8f0;
+  --border-light: #f1f5f9;
+  --border-dark: #cbd5e1;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(
+    135deg,
+    var(--primary-light),
+    var(--primary-dark)
+  );
+  --gradient-secondary: linear-gradient(
+    135deg,
+    var(--secondary-light),
+    var(--secondary-dark)
+  );
+  --gradient-accent: linear-gradient(
+    135deg,
+    var(--accent-light),
+    var(--accent-dark)
+  );
+  --gradient-success: linear-gradient(
+    135deg,
+    var(--success-light),
+    var(--success-dark)
+  );
+  --gradient-error: linear-gradient(
+    135deg,
+    var(--error-light),
+    var(--error-dark)
+  );
+  --gradient-warning: linear-gradient(
+    135deg,
+    var(--warning-light),
+    var(--warning-dark)
+  );
+  --gradient-info: linear-gradient(135deg, var(--info-light), var(--info-dark));
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.dark {
+  /* Base Theme Colors - Dark Mode */
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --background-start: #001432;
+  --background-end: #000c24;
+
+  /* Primary Colors */
+  --primary: #60a5fa;
+  --primary-foreground: #020817;
+  --primary-light: #93c5fd;
+  --primary-dark: #3b82f6;
+
+  /* Secondary Colors */
+  --secondary: #4fd1c5;
+  --secondary-foreground: #020817;
+  --secondary-light: #6ee7b7;
+  --secondary-dark: #10b981;
+
+  /* Accent Colors */
+  --accent: #fb7185;
+  --accent-foreground: #020817;
+  --accent-light: #fda4af;
+  --accent-dark: #f43f5e;
+
+  /* Semantic Colors */
+  --success: #4ade80;
+  --success-foreground: #020817;
+  --success-light: #86efac;
+  --success-dark: #22c55e;
+
+  --warning: #fbbf24;
+  --warning-foreground: #020817;
+  --warning-light: #fcd34d;
+  --warning-dark: #f59e0b;
+
+  --error: #f87171;
+  --error-foreground: #020817;
+  --error-light: #fca5a5;
+  --error-dark: #ef4444;
+
+  --info: #38bdf8;
+  --info-foreground: #020817;
+  --info-light: #7dd3fc;
+  --info-dark: #0ea5e9;
+
+  /* UI Element Colors */
+  --card: #1a1f2e;
+  --card-foreground: #f8fafc;
+  --card-hovered: #334155;
+  --card-active: #475569;
+
+  --popover: #1e293b;
+  --popover-foreground: #f8fafc;
+
+  --muted: #334155;
+  --muted-foreground: #94a3b8;
+
+  /* Border Colors */
+  --border: #1e293b;
+  --border-light: #334155;
+  --border-dark: #0f172a;
+
+  /* Gradients remain the same as they use the dark mode color variables */
+}
+
+@keyframes moveRight {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes charAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes shine {
+  from {
+    background-position: 200% center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}
+/* Shine effect styles */
+.before\:animate-shine::before {
+  content: "";
+  opacity: 0.3;
+  mask-image: linear-gradient(to right, transparent, black, transparent);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black,
+    transparent
+  );
+}
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translate(10px, -10px) scale(1.5);
+    opacity: 0.5;
+  }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animate-shine {
+  background-size: 200% auto;
+  animation: shine 8s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
 }
