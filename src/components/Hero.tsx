@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="max-w-3xl mx-auto">
         <div className="flex flex-col items-start text-left">
           <div className="mb-2 text-lg sm:text-xl font-mono opacity-80">
-            Hi, I'm
+            Hi, I&apos;m
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 font-sans">

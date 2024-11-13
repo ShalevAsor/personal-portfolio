@@ -28,8 +28,10 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row justify-between items-center py-6 gap-4">
           {/* Copyright */}
           <span className="text-sm text-muted-foreground font-mono">
-            © {currentYear} <span className="text-secondary">//</span> All
-            rights reserved <span className="text-secondary">//</span>
+            © {currentYear} <span className="text-secondary">{"/"}</span>
+            <span className="text-secondary">{"/"}</span> All rights reserved{" "}
+            <span className="text-secondary">{"/"}</span>
+            <span className="text-secondary">{"/"}</span>
             {" Shalev Asor"}
           </span>
 
