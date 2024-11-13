@@ -8,13 +8,11 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Logo from "./Logo";
 
-// Define interface for NavLinks props
 interface NavLinksProps {
   className?: string;
   onClick?: () => void;
 }
 
-// Define interface for nav items
 interface NavItem {
   href: string;
   label: string;
@@ -64,7 +62,9 @@ export default function Navbar() {
             className
           )}
         >
-          <span className="text-secondary opacity-75">//</span> {item.label}
+          <span className="text-secondary opacity-75">{"/"}</span>
+          <span className="text-secondary opacity-75">{"/"}</span>
+          {" " + item.label}
           <span
             className={cn(
               "absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-secondary transition-all duration-300 group-hover:w-full",
