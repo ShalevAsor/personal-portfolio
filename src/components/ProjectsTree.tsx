@@ -124,7 +124,7 @@ export default function ProjectsTree({ projects }: ProjectsTreeProps) {
   };
 
   return (
-    <div ref={treeRef} className="relative w-full min-h-[600px]">
+    <div ref={treeRef} className="relative w-full min-h-[450px]">
       <svg
         className="absolute inset-0 w-full h-full pointer-events-none"
         style={{ zIndex: 0 }}

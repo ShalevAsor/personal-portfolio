@@ -4,18 +4,15 @@ import ProjectsTree from "@/components/ProjectsTree";
 import SectionTitle from "@/components/SectionTitle";
 export default function ProjectsPage() {
   return (
-    <main className="relative min-h-full">
-      <div className="max-w-4xl mx-auto px-6 pt-24 relative z-10">
-        {/* Section Title */}
-        <div className="mb-2">
-          <div className="inline-flex flex-col mb-4">
-            <SectionTitle text="Projects." />
-            {/* <h1 className="text-4xl sm:text-5xl font-bold mb-6 ">About.</h1> */}
-          </div>
+    <div className="h-full flex items-center justify-center">
+      <div className="max-w-4xl w-full px-6 mt-20 md:mt-0">
+        <div className="mb-8">
+          <SectionTitle text="Projects." />
         </div>
-
-        <ProjectsTree projects={projectsData} />
+        <div className="flex items-center justify-center">
+          <ProjectsTree projects={projectsData} />
+        </div>
       </div>
-    </main>
+    </div>
   );
 }
