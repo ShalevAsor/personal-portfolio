@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "@/components/ui/card";
 import { Code2, Database, Rocket } from "lucide-react";
+import SectionTitle from "./SectionTitle";
 
 const About = () => {
   const skills = [
@@ -47,9 +48,10 @@ const About = () => {
 
       <div className="max-w-4xl mx-auto px-6 pt-24 relative z-10">
         {/* Section Title */}
-        <div className="mb-12">
+        <div className="mb-2">
           <div className="inline-flex flex-col">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-6 ">About Me.</h1>
+            <SectionTitle text="About." />
+            {/* <h1 className="text-4xl sm:text-5xl font-bold mb-6 ">About.</h1> */}
           </div>
         </div>
 

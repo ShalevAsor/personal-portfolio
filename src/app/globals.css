@@ -13,6 +13,8 @@
   --background-end: #fff0f7;
 
   /* Primary Colors */
+  --title: #0093e9;
+  --gradient-title: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
   --primary: #3b82f6;
   --primary-foreground: #ffffff;
   --primary-light: #60a5fa;
@@ -110,6 +112,9 @@
   --background-end: #000c24;
 
   /* Primary Colors */
+
+  --title: #ffffff;
+  --gradient-title: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
   --primary: #60a5fa;
   --primary-foreground: #020817;
   --primary-light: #93c5fd;

@@ -1,4 +1,5 @@
 // tailwind.config.ts
+import { title } from "process";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -14,6 +15,7 @@ export default {
       },
       colors: {
         // Base colors
+        title: "var(--title)",
         background: "var(--background)",
         foreground: "var(--foreground)",
         "background-start": "var(--background-start)",
@@ -100,6 +102,7 @@ export default {
         "gradient-error": "var(--gradient-error)",
         "gradient-warning": "var(--gradient-warning)",
         "gradient-info": "var(--gradient-info)",
+        "gradient-title": "var(--gradient-title)",
       },
       // Rest of your existing config...
     },

@@ -20,13 +20,12 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Shalev Asor - Frontend Developer and Algorithm Enthusiast",
   icons: {
-    icon: "/favicon.ico", // /public/favicon.ico
-    shortcut: "/favicon-16x16.png", // /public/favicon-16x16.png
-    apple: "/apple-touch-icon.png", // /public/apple-touch-icon.png
-    other: {
-      rel: "apple-touch-icon-precomposed",
-      url: "/apple-touch-icon-precomposed.png",
-    },
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16" },
+      { url: "/favicon-32x32.png", sizes: "32x32" },
+    ],
+    apple: { url: "/apple-touch-icon.png" },
   },
 };
 

@@ -17,7 +17,7 @@ export default function Footer() {
     },
     {
       name: "Email",
-      href: "mailto:your.email@example.com",
+      href: "mailto:shalevasor@gmail.com",
       icon: Mail,
     },
   ];
