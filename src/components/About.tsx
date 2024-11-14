@@ -1,7 +1,6 @@
 import React from "react";
 import { Card } from "@/components/ui/card";
 import { Code2, Database, Rocket } from "lucide-react";
-import SectionTitle from "./SectionTitle";
 
 const About = () => {
   const skills = [
