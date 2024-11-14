@@ -1,13 +1,7 @@
 import React from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
-import { Coiny } from "next/font/google";
 
-const coiny = Coiny({
-  weight: "400",
-  subsets: ["latin"],
-  display: "swap",
-});
 const Hero = () => {
   return (
     <div className="h-full flex items-center justify-center px-6 sm:px-8">
