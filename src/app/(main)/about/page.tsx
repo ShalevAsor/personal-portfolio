@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <div className="h-full flex items-center justify-center">
       <div className="max-w-4xl w-full px-6 mt-20 md:mt-0">
-        <div className="mb-8">
+        <div className="mt-36">
           <SectionTitle text="About." />
         </div>
         <div className="flex items-center justify-center">
