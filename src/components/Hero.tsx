@@ -12,7 +12,7 @@ const Hero = () => {
           </div>
 
           <h1
-            className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-2 font-sans text-title`}
+            className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-2 font-sans text-secondary`}
           >
             Shalev Asor
           </h1>

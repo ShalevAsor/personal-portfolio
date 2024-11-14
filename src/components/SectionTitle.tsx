@@ -12,7 +12,7 @@ export default function SectionTitle({ text }: { text: string }) {
       className={`
         ${coiny.className}
         text-7xl font-bold
-        text-title
+        text-secondary
          bg-clip-text
         animate-shine bg-[length:200%_auto]
       `}
