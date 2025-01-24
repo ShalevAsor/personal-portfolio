@@ -18,7 +18,7 @@ const Hero = () => {
           </h1>
 
           <h2 className="text-lg sm:text-xl font-mono text-primary mb-4">
-            Frontend Developer
+            Fullstack Developer
           </h2>
 
           <div className="space-y-4 text-base sm:text-lg font-sans leading-relaxed opacity-80">

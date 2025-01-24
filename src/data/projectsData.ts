@@ -4,6 +4,43 @@ import { Project } from "@/types";
 export const projectsData: Project[] = [
   // Web Development Projects
   {
+    id: "channels",
+    title: "Channels - Real-time Communication Platform",
+    description:
+      "A full-featured Discord-inspired communication platform built with Next.js 14 and TypeScript, featuring a custom WebSocket server for real-time communication. The project consists of both a client application and a dedicated backend server handling WebSocket connections, real-time events, and channel management.",
+    technologies: [
+      "Next.js 14",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "Custom WebSocket Server",
+      "Node.js",
+      "Livekit",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "React Query",
+      "Authentication",
+      "WebRTC",
+    ],
+    category: "web",
+    links: {
+      github: "https://github.com/shalevasor/channels",
+      live: "https://channels-livid.vercel.app",
+    },
+    features: [
+      "Custom WebSocket server implementation for real-time event handling",
+      "Real-time text, voice, and video chat capabilities",
+      "Comprehensive authentication with email verification, password reset, and 2FA",
+      "Role-based access control (Admin, Moderator, Guest) with granular permissions",
+      "Server management with public/private servers, categories, and custom invites",
+      "Direct messaging and conversation system between users",
+      "File sharing with support for multiple file types",
+      "Real-time typing indicators and message status",
+      "Server discovery with categories and tags",
+      "Message editing, deletion, and history tracking",
+    ],
+  },
+  {
     id: "ludus-master",
     title: "LudusMaster - Gladiatorial Management Game",
     description:

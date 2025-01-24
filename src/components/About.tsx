@@ -13,9 +13,10 @@ const About = () => {
         "JavaScript",
         "TypeScript",
         "C",
-        "Kotlin",
         "HTML",
         "CSS",
+        "Python",
+        "SQL",
       ],
     },
     {
@@ -28,12 +29,19 @@ const About = () => {
         "React.js",
         "Git",
         "Unix/Linux",
+        "Node.js",
+        "WebSocket",
+        "Prisma",
+        "React Query",
+        "TailwindCSS",
+        "shadcn/ui",
+        "Clerk",
       ],
     },
     {
       category: "Databases",
       icon: Database,
-      items: ["MySQL", "MongoDB"],
+      items: ["MySQL", "PostgreSQL", "Supabase"],
     },
   ];
 
