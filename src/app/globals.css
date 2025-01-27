@@ -2,7 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 :root {
   --navbar-height: 4rem; /* Adjust based on your navbar height */
   --footer-height: 4rem; /* Adjust based on your footer height */

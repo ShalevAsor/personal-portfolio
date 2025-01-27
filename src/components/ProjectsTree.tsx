@@ -25,6 +25,7 @@ export default function ProjectsTree({ projects }: ProjectsTreeProps) {
   );
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const treeRef = useRef<HTMLDivElement>(null);
+  const projectDetailsRef = useRef<HTMLDivElement>(null);
   const [treeLines, setTreeLines] = useState<JSX.Element[]>([]);
 
   // Initialize categories with proper typing
@@ -112,6 +113,16 @@ export default function ProjectsTree({ projects }: ProjectsTreeProps) {
 
   const handleProjectClick = (project: Project) => {
     setSelectedProject(project);
+
+    // Wait for the next render cycle when the project details component is mounted
+    setTimeout(() => {
+      if (projectDetailsRef.current) {
+        projectDetailsRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }, 100);
   };
 
   const getCategoryDisplayName = (category: CategoryType): string => {
@@ -205,6 +216,7 @@ export default function ProjectsTree({ projects }: ProjectsTreeProps) {
 
         {selectedProject && (
           <motion.div
+            ref={projectDetailsRef}
             className="w-full max-w-4xl mx-auto mt-8"
             initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
