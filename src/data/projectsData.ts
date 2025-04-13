@@ -4,6 +4,45 @@ import { Project } from "@/types";
 export const projectsData: Project[] = [
   // Web Development Projects
   {
+    id: "system-flow",
+    title: "SystemFlow - Interactive Software Architecture Simulator",
+    description:
+      "A full-stack web application for simulating, visualizing, and analyzing software architecture designs with real-time performance metrics and data flow visualization. The platform enables architects and developers to design systems using drag & drop, test their performance, and identify bottlenecks before implementation.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "React Flow",
+      "Tailwind CSS",
+      "JWT Authentication",
+      "Docker",
+      "GitHub Actions",
+      "Jest",
+      "React Query",
+    ],
+    category: "web",
+    links: {
+      github: "https://github.com/ShalevAsor/system-flow",
+      live: "https://system-flow.vercel.app",
+    },
+    features: [
+      "Drag & Drop interface for building complex architecture diagrams",
+      "Template library for common architecture patterns (microservices, monolithic, etc)",
+      "Real-time simulation engine for performance analysis",
+      "Dynamic visualization of data flow between system components",
+      "Bottleneck identification and performance optimization recommendations",
+      "Component property customization for realistic simulations",
+      "User authentication and access control with JWT",
+      "Flow saving and sharing capabilities",
+      "Automated CI/CD pipeline with GitHub Actions",
+      "Dockerized deployment for consistent environments",
+    ],
+  },
+  {
     id: "channels",
     title: "Channels - Real-time Communication Platform",
     description:
