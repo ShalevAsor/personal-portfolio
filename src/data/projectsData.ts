@@ -4,6 +4,50 @@ import { Project } from "@/types";
 export const projectsData: Project[] = [
   // Web Development Projects
   {
+    id: "talebyyou",
+    title: "TaleByYou - Custom Children's Book Store",
+    description:
+      "A comprehensive fullstack e-commerce platform for creating personalized children's books. Users can select templates, customize characters with photos and personal details, and order both physical books and ebooks. Features AI-powered image generation, real-time customization, and integration with print-on-demand services.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Clerk Authentication",
+      "Leonardo AI",
+      "AWS S3",
+      "PayPal API",
+      "Lulu Print API",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "React Query",
+      "Zustand",
+      "Vercel",
+      "Docker",
+      "Jest",
+    ],
+    category: "web",
+    links: {
+      github: "https://github.com/shalevasor/talebyyou",
+      live: "https://talebyyou.com",
+    },
+    features: [
+      "AI-powered image generation using Leonardo AI for personalized book covers and pages",
+      "Advanced book customization with text editing, character personalization, and dedication pages",
+      "Dual product offering: physical books with free ebooks or standalone ebooks",
+      "Real-time image cropping and upload functionality for character photos",
+      "Print-on-demand integration with Lulu API for automated book production",
+      "Comprehensive admin dashboard for order management, template creation, and analytics",
+      "Guest user sessions for anonymous book creation and customization",
+      "Multi-step checkout process with PayPal payment integration",
+      "Template library with genre-based filtering and preview functionality",
+      "Order tracking system with status updates from creation to delivery",
+      "Automated email notifications for order confirmations and updates",
+      "Responsive design optimized for desktop and mobile book customization",
+    ],
+  },
+  {
     id: "system-flow",
     title: "SystemFlow - Interactive Software Architecture Simulator",
     description:
